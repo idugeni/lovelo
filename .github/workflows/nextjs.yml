@@ -55,8 +55,8 @@ jobs:
       - name: Build with Next.js
         run: npm run build
         env:
-          NODE_ENV: github-pages
-        # Build the Next.js project for GitHub Pages environment
+          NODE_ENV: production
+        # Build the Next.js project for production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
